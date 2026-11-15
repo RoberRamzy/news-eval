@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+config.json
+runs/
+smoke-results/
+smoke-with-logs/
+*.jsonl
+scorecard*.json
+pipeline.log
+scorecard*.svg

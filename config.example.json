@@ -1,0 +1,25 @@
+{
+  "llm": {
+    "base_url": "https://llm.example.org/v1",
+    "token_env": "RAG_EVAL_LLM_TOKEN",
+    "timeout": 90
+  },
+  "staging": {
+    "url": "https://staging.example.org/ask",
+    "trace_url": "https://staging.example.org/eval/traces/{request_id}",
+    "token_env": "RAG_EVAL_STAGING_TOKEN",
+    "trace_token_env": "RAG_EVAL_TRACE_TOKEN",
+    "timeout": 30,
+    "snapshot": "archive-2026-11",
+    "build": "staging-build-id",
+    "response_fields": {
+      "answer": "answer",
+      "citations": "citations",
+      "request_id": "request_id"
+    },
+    "trace_fields": {
+      "request_id": "request_id",
+      "passages": "passages"
+    }
+  }
+}
